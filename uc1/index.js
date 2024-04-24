@@ -53,7 +53,7 @@ app.post('/signup',async (req,res)=>{
         res.status(400).json({error:error.message})
     }
 })
-mongoose.connect(process.env.MURL) //connect to database , then create middleware server
+mongoose.connect("mongodb+srv://deekshakrish488:Wo2D19diCdgN8Jaf@cluster0.29qh5gt.mongodb.net/") //connect to database , then create middleware server
 .then(()=>{
     app.listen(5001,()=>console.log("uc1 running"))
 }).catch((error) => {
